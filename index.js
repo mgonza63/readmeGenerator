@@ -1,5 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const util = require("util");
+
+const writeFileAsync = util.promisify(fs.writeFile);
 
 const questions = [
     {
@@ -32,7 +35,7 @@ const questions = [
     {
         type: "input",
         name: "myLicense",
-        message: "What liscense did you use?"
+        message: "What license did you use?"
     }];
 
     //.then(function(answer) {
@@ -40,9 +43,9 @@ const questions = [
 
     // })
 
-inquirer.prompt(questions).then(function (answer) { 
-    console.log(answer); 
-});
+function promptUser() {
+    return inquirer.prompt(questions);
+};
 
 function generateREADME(answer) {
     return `# Your Project Title
@@ -76,13 +79,14 @@ function generateREADME(answer) {
     
     ## License
     
-    ${answer.Liscence}
+    ${answer.myLicense}
     
     `
 }
 
 async function init() {
-    console.log("hi")
+    console.log("hi");
+
     try {
       const answers = await promptUser();
   
@@ -90,7 +94,8 @@ async function init() {
   
       await writeFileAsync("goodREADME.md", md);
   
-      console.log("Successfully wrote to index.html");
+      console.log("Successfully wrote to goodREADME.md");
+
     } catch(err) {
       console.log(err);
     }
