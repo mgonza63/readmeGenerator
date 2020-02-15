@@ -16,7 +16,7 @@ const questions = [
         name: "myDescription",
         message: "Give a description of your Project"
     },
-    // MISSING TABLE OF CONTENTS
+    
     {
         type: "input",
         name: "myInstall",
@@ -33,9 +33,10 @@ const questions = [
         message: "List collaborators and third-party assets"   
     },
     {
-        type: "input",
+        type: "list",
         name: "myLicense",
-        message: "What license did you use?"
+        message: "What license did you use?",
+        choices: ["MIT", "BSD", "GNU"]
     }];
 
     //.then(function(answer) {
@@ -90,7 +91,7 @@ async function init() {
   
       const md = generateREADME(answers);
   
-      await writeFileAsync("README.md", md);
+      await writeFileAsync("goodREADME.md", md);
   
       console.log("Successfully wrote to README.md");
 
