@@ -48,9 +48,7 @@ function promptUser() {
 };
 
 function generateREADME(answer) {
-    return `# Your Project Title
-
-    ${answer.myProject}
+    return `# ${answer.myProject}
 
     ## Description 
     
@@ -92,9 +90,9 @@ async function init() {
   
       const md = generateREADME(answers);
   
-      await writeFileAsync("goodREADME.md", md);
+      await writeFileAsync("README.md", md);
   
-      console.log("Successfully wrote to goodREADME.md");
+      console.log("Successfully wrote to README.md");
 
     } catch(err) {
       console.log(err);
