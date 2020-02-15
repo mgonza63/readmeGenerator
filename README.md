@@ -1,32 +1,31 @@
-# ReadMe Generator
+# Readme Generator
 
-    ## Description 
+## Description 
     
-    This project give you a good readme by just answering a few questions, within minutes you can create the perfect readme for your repository!
+This project generates a nice readme for any project you want, within seconds you can genereate the perfect readme for your project.
     
-    ## Table of Contents
-    
-    
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
+## Table of Contents
     
     
-    ## Installation
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
     
-    Clone this repo, run it with node and answer a couple of questions related to your project, and the README file is generated.
     
-    ## Usage 
+## Installation
     
-    Use this project when creating any repo, you can use it as many times as you need. 
+clone this repo and all the files should be ready, run the index.js through node and you will be prompted with questions.
     
-    ## Credits
+## Usage 
     
-    Node JS, Inquirer, and Util
+Use this project to dinamically create a readme file for any repository you want, you can use it as many times you need to! After running the index.js with node, fill in a few prompts and the md file will be generated for you.
     
-    ## License
+## Credits
     
-    MIT
+Node JS, Inquirer, and Util
     
+## License
+    
+MIT
     

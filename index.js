@@ -83,14 +83,14 @@ ${answer.myLicense}
 }
 
 async function init() {
-    console.log("hi");
+    console.log("Fill in the prompts to create the readme file:");
 
     try {
       const answers = await promptUser();
   
       const md = generateREADME(answers);
   
-      await writeFileAsync("goodREADME.md", md);
+      await writeFileAsync("README.md", md);
   
       console.log("Successfully wrote to README.md");
 
