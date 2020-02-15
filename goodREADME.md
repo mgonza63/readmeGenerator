@@ -1,34 +1,31 @@
-# Your Project Title
+# Good Readme
 
-    GoodREADME Generator
-
-    ## Description 
+## Description 
     
-    creates a good read me
+creates a good readme
     
-    ## Table of Contents
+## Table of Contents
     
     
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
     
     
-    ## Installation
+## Installation
     
-    u need to do the stuff
+install the thing
     
-    ## Usage 
+## Usage 
     
-    everytime you everytime you create a repo you can use this to create a nice read me
+when needing a better readme
     
-    ## Credits
+## Credits
     
-    bootstrap, inquirer, util
+node js
     
-    ## License
+## License
     
-    undefined
-    
+mit
     

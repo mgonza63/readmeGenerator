@@ -50,36 +50,36 @@ function promptUser() {
 function generateREADME(answer) {
     return `# ${answer.myProject}
 
-    ## Description 
+## Description 
     
-    ${answer.myDescription}
+${answer.myDescription}
     
-    ## Table of Contents
-    
-    
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
+## Table of Contents
     
     
-    ## Installation
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
     
-    ${answer.myInstall}
     
-    ## Usage 
+## Installation
     
-    ${answer.myInstructions}
+${answer.myInstall}
     
-    ## Credits
+## Usage 
     
-    ${answer.myCollabs}
+${answer.myInstructions}
     
-    ## License
+## Credits
     
-    ${answer.myLicense}
+${answer.myCollabs}
     
-    `
+## License
+    
+${answer.myLicense}
+    
+`
 }
 
 async function init() {
@@ -90,7 +90,7 @@ async function init() {
   
       const md = generateREADME(answers);
   
-      await writeFileAsync("README.md", md);
+      await writeFileAsync("goodREADME.md", md);
   
       console.log("Successfully wrote to README.md");
 
