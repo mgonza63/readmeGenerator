@@ -7,10 +7,14 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const questions = [
     {
         type: "input",
+        name: "myGithub",
+        message: "What is your Github username?"
+    },
+    {
+        type: "input",
         name: "myProject",
         message: "What is the name of your Project?"
-    }
-    ,
+    },
     {
         type: "input",
         name: "myDescription",
@@ -20,7 +24,8 @@ const questions = [
     {
         type: "input",
         name: "myInstall",
-        message: "What are the steps required to install your project?"
+        message: "What command should be run to install dependencies?",
+        default: "npm i"
     },
     {   
         type: "input",
@@ -37,7 +42,20 @@ const questions = [
         name: "myLicense",
         message: "What license did you use?",
         choices: ["MIT", "BSD", "GNU"]
-    }];
+    },
+    {
+        type: "input",
+        name: "myTests",
+        message: "What command should be run to run tests?",
+        default: "npm test"
+    },
+    {
+        type: "input",
+        name: "myContribution",
+        message: "What does the user need to know about contributing to the repo?"  
+    }
+    
+];
 
     //.then(function(answer) {
     //     console.log(answer)
@@ -79,7 +97,15 @@ ${answer.myCollabs}
 ## License
     
 ${answer.myLicense}
-    
+
+## Tests
+
+${answer.myTests}
+
+## Contributing
+
+${answer.Contributions}
+
 `
 }
 
