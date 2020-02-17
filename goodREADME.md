@@ -1,8 +1,8 @@
-# Good Readme
+# gonzalez
 
 ## Description 
     
-creates a good readme
+guerrero
     
 ## Table of Contents
     
@@ -15,25 +15,26 @@ creates a good readme
     
 ## Installation
     
-install the thing
+npm i
     
 ## Usage 
     
-when needing a better readme
+blah
     
 ## Credits
     
-node js
+blah
     
 ## License
     
-mit
+MIT
+
+## Tests
+
+bah
 
 ## Contributing
 
-
-    
-## Tests
-
+undefined
 
 

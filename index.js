@@ -1,6 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
+const axios = require("axios");
+
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
@@ -104,10 +106,24 @@ ${answer.myTests}
 
 ## Contributing
 
-${answer.Contributions}
+${answer.Contribution}
+
 
 `
 }
+// async function getImage({ myGithub }){
+//     try {
+//         const queryUrl = `https://api.github.com/users/${myGithub}`;
+
+//         const response = await axios.get(queryUrl);
+//         console.log(response);
+
+//       } catch (error) {
+//         console.error(error);
+//       }
+    
+// };
+
 
 async function init() {
     console.log("Fill in the prompts to create the readme file:");
@@ -125,5 +141,5 @@ async function init() {
       console.log(err);
     }
   }
-  
+
   init();
