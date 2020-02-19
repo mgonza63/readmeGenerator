@@ -71,4 +71,4 @@ Submit bugs and feature requests
 
 ## Demo
 
-![Demo](./assets/Demo.gif)
+![Demo](./assets/demo.gif)
