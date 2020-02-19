@@ -106,23 +106,33 @@ ${answer.myTests}
 
 ## Contributing
 
-${answer.Contribution}
+${answer.myContribution}
 
+![My Avatar] (${avatar_url})
 
 `
 }
-// async function getImage({ myGithub }){
-//     try {
-//         const queryUrl = `https://api.github.com/users/${myGithub}`;
+// ![My Avatar] (avatar_url)
 
-//         const response = await axios.get(queryUrl);
-//         console.log(response);
 
-//       } catch (error) {
-//         console.error(error);
-//       }
+
+
+async function getImage(username){
+    try {
+        const queryUrl = "https://api.github.com/users/" + username;
+
+        const response = await axios.get(queryUrl);
+        const avatar_url = response.data.avatar_url;
+        
+        console.log(avatar_url);
+        return avatar_url;
+        
+
+      } catch (error) {
+        console.error(error);
+      }
     
-// };
+};
 
 
 async function init() {
@@ -132,7 +142,10 @@ async function init() {
       const answers = await promptUser();
   
       const md = generateREADME(answers);
-  
+
+      const username = answers.myGithub
+
+      getImage(username);
       await writeFileAsync("goodREADME.md", md);
   
       console.log("Successfully wrote to README.md");

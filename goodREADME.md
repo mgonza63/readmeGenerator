@@ -1,8 +1,8 @@
-# gonzalez
+# Good Readme generator
 
 ## Description 
     
-guerrero
+generates a good read me with your avatar pciture
     
 ## Table of Contents
     
@@ -19,11 +19,11 @@ npm i
     
 ## Usage 
     
-blah
+answer questions get readme
     
 ## Credits
     
-blah
+axios
     
 ## License
     
@@ -31,10 +31,11 @@ MIT
 
 ## Tests
 
-bah
+npm test
 
 ## Contributing
 
 undefined
 
+![My Avatar] (avatar_url)
 
