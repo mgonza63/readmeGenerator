@@ -68,8 +68,11 @@ function promptUser() {
     return inquirer.prompt(questions);
 };
 
-function generateREADME(answer, image) {
+function generateREADME(answer, image, banner) {
     return `# ${answer.myProject}
+
+##    
+${banner}
 
 ## Description 
     
@@ -134,7 +137,24 @@ async function getImage(username){
     
 
 };
+async function getBadge(license) {
+    try {
+        if (license === "MIT") {
+            return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+        };
+        if (license === "BSD") {
+            return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+        };
 
+        if (license === "GNU") {
+            return "[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)"
+        };
+
+    }
+    catch(error) {
+        console.log(error)
+    }
+};
 
 async function init() {
     console.log("Fill in the prompts to create the readme file:");
@@ -146,7 +166,11 @@ async function init() {
 
       const image = await getImage(username);
 
-      const md = generateREADME(answers, image);
+      const license = answers.myLicense;
+
+      const banner = await getBadge(license);
+
+      const md = generateREADME(answers, image, banner);
 
       
 
