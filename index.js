@@ -68,7 +68,7 @@ function promptUser() {
     return inquirer.prompt(questions);
 };
 
-function generateREADME(answer) {
+function generateREADME(answer, image) {
     return `# ${answer.myProject}
 
 ## Description 
@@ -108,11 +108,11 @@ ${answer.myTests}
 
 ${answer.myContribution}
 
-![My Avatar] (${avatar_url})
+![My Avatar](${image})
 
 `
 }
-// ![My Avatar] (avatar_url)
+// ![My Avatar] (${avatar_url})
 
 
 
@@ -122,16 +122,17 @@ async function getImage(username){
         const queryUrl = "https://api.github.com/users/" + username;
 
         const response = await axios.get(queryUrl);
-        const avatar_url = response.data.avatar_url;
+        const avatar_url = await response.data.avatar_url;
         
         console.log(avatar_url);
-        return avatar_url;
         
+        return avatar_url
 
       } catch (error) {
         console.error(error);
       }
     
+
 };
 
 
@@ -140,12 +141,16 @@ async function init() {
 
     try {
       const answers = await promptUser();
-  
-      const md = generateREADME(answers);
 
-      const username = answers.myGithub
+      const username = answers.myGithub;
 
-      getImage(username);
+      const image = await getImage(username);
+
+      const md = generateREADME(answers, image);
+
+      
+
+      
       await writeFileAsync("goodREADME.md", md);
   
       console.log("Successfully wrote to README.md");

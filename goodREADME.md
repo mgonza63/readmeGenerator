@@ -1,8 +1,8 @@
-# Good Readme generator
+# 
 
 ## Description 
     
-generates a good read me with your avatar pciture
+
     
 ## Table of Contents
     
@@ -19,11 +19,11 @@ npm i
     
 ## Usage 
     
-answer questions get readme
+
     
 ## Credits
     
-axios
+
     
 ## License
     
@@ -35,7 +35,7 @@ npm test
 
 ## Contributing
 
-undefined
 
-![My Avatar] (avatar_url)
+
+![My Avatar](https://avatars2.githubusercontent.com/u/57790156?v=4)
 
