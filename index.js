@@ -127,7 +127,7 @@ async function getImage(username){
         const response = await axios.get(queryUrl);
         const avatar_url = await response.data.avatar_url;
         
-        console.log(avatar_url);
+        // console.log(avatar_url);
         
         return avatar_url
 

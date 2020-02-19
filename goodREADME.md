@@ -1,11 +1,11 @@
-# 
+# Good Readme
 
 ##    
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
     
-
+This project creates a good readme
     
 ## Table of Contents
     
@@ -22,15 +22,15 @@ npm i
     
 ## Usage 
     
-
+answer the questions and get a readme
     
 ## Credits
     
-
+node js
     
 ## License
     
-GNU
+MIT
 
 ## Tests
 
@@ -38,7 +38,7 @@ npm test
 
 ## Contributing
 
-
+help
 
 ![My Avatar](https://avatars2.githubusercontent.com/u/57790156?v=4)
 
