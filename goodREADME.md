@@ -1,11 +1,11 @@
-# Good Readme
+# good readme
 
 ##    
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
     
-This project creates a good readme
+creates a good readme
     
 ## Table of Contents
     
@@ -22,7 +22,7 @@ npm i
     
 ## Usage 
     
-answer the questions and get a readme
+answer questions get read me
     
 ## Credits
     

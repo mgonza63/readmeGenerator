@@ -67,3 +67,8 @@ npm test
 Submit bugs and feature requests
 
 ![My Avatar](https://avatars2.githubusercontent.com/u/57790156?v=4)
+
+
+## Demo
+
+![Demo](./assets/Demo.gif)
