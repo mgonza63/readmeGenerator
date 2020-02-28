@@ -1,11 +1,11 @@
-# good readme
+# Employee Team Summary
 
 ##    
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
     
-creates a good readme
+This project allows you to create a whole employee team for your projects. Just answer some basic question and an html file will be rendered for you with the employees descriptions. You can add as many members you want!
     
 ## Table of Contents
     
@@ -22,11 +22,11 @@ npm i
     
 ## Usage 
     
-answer questions get read me
+Install the dependencies, then go to the terminal type in node app.js and then answer the questions 
     
 ## Credits
     
-node js
+Bootstrap, Inquirer.
     
 ## License
     
@@ -38,7 +38,9 @@ npm test
 
 ## Contributing
 
-help
+Any contributions would be helpful
 
-![My Avatar](https://avatars2.githubusercontent.com/u/57790156?v=4)
+
+
+## Demo
 
