@@ -1,11 +1,11 @@
-# Employee Team Summary
+# Note Taker
 
 ##    
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description 
     
-This project allows you to create a whole employee team for your projects. Just answer some basic question and an html file will be rendered for you with the employees descriptions. You can add as many members you want!
+This application made with Express allows you to take notes and it saves them when you create them
     
 ## Table of Contents
     
@@ -22,11 +22,11 @@ npm i
     
 ## Usage 
     
-Install the dependencies, then go to the terminal type in node app.js and then answer the questions 
+It is pretty self explanatory click the "get started" button and start taking notes
     
 ## Credits
     
-Bootstrap, Inquirer.
+Express, Bootstrap, Util, Axios
     
 ## License
     
@@ -38,9 +38,7 @@ npm test
 
 ## Contributing
 
-Any contributions would be helpful
 
 
-
-## Demo
+![My Avatar](https://avatars2.githubusercontent.com/u/57790156?v=4)
 
